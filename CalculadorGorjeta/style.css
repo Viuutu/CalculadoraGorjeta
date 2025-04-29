@@ -1,63 +1,111 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700|PT++Mono);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 :root {
-  --primary-color: lightcoral;
-  --secondary-color: Dimgrey;
-  --tertiary-color: Gainsboro;
+  --primary-color: #ff6b6b;
+  --secondary-color: #2e2e2e;
+  --tertiary-color: #f1f1f1;
+  --bg-color: #ffffff;
+  --input-bg: #f9f9f9;
+  --border-color: #ddd;
+  --font-color: #333;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: var(--primary-color);
-  font-size: 15px;
-  font-family: Lato, sans-serif;
+  background: linear-gradient(135deg, #ff6b6b, #ffd166);
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  color: var(--font-color);
 }
+
 #container {
-  height: 525px;
-  width: 360px;
-  margin: 100px auto;
-  background-color: #fff;
-  box-shadow: 3px 3px 3px grey;
-  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  background-color: var(--bg-color);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
+
 .title {
   background-color: var(--tertiary-color);
   color: var(--secondary-color);
-  padding: 20px;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: normal;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  padding: 24px;
   text-align: center;
-}
-.tipsForm {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.formInput {
-  background: white;
-  width: 40px;
-  padding: 5px 5px 8px 8px;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-color);
 }
 
-.formInput:focus {
-  border: 3px solid var(--primary-color);
-  outline: none;
+.tipsForm {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
+
+.tipsForm label p {
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.formInput,
 .formSelect {
-  width: 180px;
-  padding: 5px;
-  font-size: 12px;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--input-bg);
+  transition: border-color 0.2s;
+}
+
+.formInput:focus,
+.formSelect:focus {
+  border-color: var(--primary-color);
+  outline: none;
 }
 
 .formSubmit {
-  text-transform: uppercase;
-  font-weight: bold;
-  display: block;
-  margin: 30px auto;
-  background: var(--primary-color);
-  border-radius: 5px;
-  width: 200px;
-  height: 50px;
-  font-size: 17px;
+  background-color: var(--primary-color);
   color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formSubmit:hover {
+  background-color: #ff4c4c;
+}
+
+#result {
+  text-align: center;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--secondary-color);
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 18px;
+  }
+
+  .formSubmit {
+    font-size: 15px;
+    padding: 12px;
+  }
 }
