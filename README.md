@@ -1,7 +1,7 @@
 # 💸 Calculadora de Gorjetas
 Uma calculadora de gorjetas simples, interativa e responsiva, desenvolvida com HTML, CSS e JavaScript. Ideal para ajudar usuários a calcular o valor ideal da gorjeta com base no valor da conta e no nível de atendimento.
 
-🚀 Funcionalidades
+## 🚀 Funcionalidades
 Inserção do valor da conta
 
 Seleção do percentual da gorjeta (padrões ou personalizado)
@@ -14,7 +14,7 @@ Interface amigável, responsiva e com tema moderno
 
 Alternância entre tema claro e escuro 🌗 (opcional, se implementado)
 
-🛠️ Tecnologias Utilizadas
+### 🛠️ Tecnologias Utilizadas
 HTML5
 
 CSS3
