@@ -23,7 +23,8 @@ JavaScript (Vanilla JS)
 
 📸 Demonstração
 
-![image](https://github.com/user-attachments/assets/691ac1fc-dcb0-485c-ada7-97d79722d4ea)
+![image](https://github.com/user-attachments/assets/7c332368-d141-4b22-b68f-8a437d243735)
+
 
 
 📦 Como usar
